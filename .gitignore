@@ -1,0 +1,8 @@
+*~
+*.o
+*.so
+*.dll
+.Rhistory
+..Rcheck/*
+autom4te.cache/*
+*#

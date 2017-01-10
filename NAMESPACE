@@ -1,0 +1,5 @@
+useDynLib(RcppRngStream)
+exportPattern("^[[:alpha:]]+")
+exportClasses("RNGStream")
+import(Rcpp)
+

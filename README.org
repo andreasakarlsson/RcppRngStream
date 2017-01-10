@@ -1,0 +1,15 @@
+#+TITLE: Microsimulation package for R
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+OPTIONS: html-postamble:nil
+
+# Babel settings
+#+PROPERTY: session *R-org*
+# +PROPERTY: cache yes
+# +PROPERTY: results output graphics
+# +PROPERTY: exports both
+# +PROPERTY: tangle yes
+# +PROPERTY: exports both
+
+* Work in progress
