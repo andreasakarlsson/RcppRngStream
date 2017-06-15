@@ -1,3 +1,12 @@
+if(.Platform$OS.type == "unix") {
+    STATICPACKAGE <- "testRcppRngStream"
+    set.user.Random.seed <- function (seed) 
+        RcppRngStream::set.user.Random.seed(seed,STATICPACKAGE)
+    next.user.Random.substream <- function () 
+        RcppRngStream::next.user.Random.substream(STATICPACKAGE)
+    user.Random.seed <- function() 
+        RcppRngStream::user.Random.seed(STATICPACKAGE)
+}
 
 test <- function() {
     base::RNGkind("user")
@@ -7,7 +16,7 @@ test <- function() {
 
 test2 <- function() {
     base::RNGkind("user")
-    .Call("testRcppRngStream",PACKAGE=packageName())
+    .Call("testRcppRngStream",PACKAGE="testRcppRngStream")
     }
 
 ## testing the user-defined random number generator

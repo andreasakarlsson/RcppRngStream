@@ -1,8 +1,10 @@
 .onLoad <- function (lib, pkg) {
+  if(.Platform$OS.type == "unix")
     RcppRngStream.init(PACKAGE="testRcppRngStream")
 }
 
 .onUnload <- function (libpath) {
-  RcppRngStream.exit(PACKAGE="testRcppRngStream")
+  if(.Platform$OS.type == "unix")
+    RcppRngStream.exit(PACKAGE="testRcppRngStream")
   library.dynam.unload("testRcppRngStream", libpath)
 }
