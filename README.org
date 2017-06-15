@@ -1,4 +1,4 @@
-#+TITLE: Microsimulation package for R
+#+TITLE: RcppRngStream package for R
 
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
@@ -12,4 +12,12 @@
 # +PROPERTY: tangle yes
 # +PROPERTY: exports both
 
-* Work in progress
+* Outline
+
+This is a test-bed for making the RngStream package available for use in other Rcpp packages. We want to manipulate the seeds at the C++ level and use R's non-uniform random numbers. 
+
+The main challenge is being able to use LinkingTo: in the DESCRIPTION of a test package with the static variables.
+
+Can we use Rcpp attributes for registering the functions?
+
+Work in progress...

@@ -1,9 +1,8 @@
 .onLoad <- function (lib, pkg) {
-  library.dynam("RcppRngStream", pkg, lib)
-  .RcppRngStream.init()
+  RcppRngStream.init()
 }
 
 .onUnload <- function (libpath) {
-  .RcppRngStream.exit()
+  RcppRngStream.exit()
   library.dynam.unload("RcppRngStream", libpath)
 }

@@ -1,0 +1,5 @@
+useDynLib(testRcppRngStream)
+exportPattern("^[[:alpha:]]+")
+## import(Rcpp)
+## import(RcppRngStream)
+importFrom(utils, packageName)

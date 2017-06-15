@@ -20,7 +20,7 @@
 
 //#include <iostream>
 //#include <R.h>
-#include "RngStream.h"
+#include <RngStream.h>
 
 namespace RcppRngStream {
 
@@ -511,3 +511,4 @@ int RngStream::RandInt (int low, int high)
 }
 
 } // namespace RcppRngStream
+

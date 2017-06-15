@@ -1,0 +1,8 @@
+PKGB_PATH=`echo 'library(RcppRngStream); cat(system.file("libs", package="RcppRngStream", mustWork=TRUE))' \
+ | rterm --vanilla --slave`
+PKG_LIBS= -L"$(PKGB_PATH)$(R_ARCH)" -lRcppRngStream
+
+PKG_CXXFLAGS = -I. 
+PKG_CFLAGS = -I.
+
+OBJECTS = test.o

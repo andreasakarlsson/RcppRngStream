@@ -1,0 +1,12 @@
+Package: testRcppRngStream
+Type: Package
+Title: What the package does (short line)
+Version: 1.0
+Date: 2017-01-10
+Author: Who wrote it
+LinkingTo: Rcpp, RcppRngStream
+Depends: Rcpp, RcppRngStream
+Imports: utils
+Maintainer: Mark Clements <mark.clements@ki.se>
+Description: More about what it does (maybe more than one line)
+License: What license is it under?

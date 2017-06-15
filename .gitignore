@@ -6,3 +6,4 @@
 ..Rcheck/*
 autom4te.cache/*
 *#
+inst/lib/libRcppRngStream.a

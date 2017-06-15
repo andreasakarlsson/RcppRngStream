@@ -1,4 +1,4 @@
-#include "RcppRngStream.h"
+#include <RcppRngStream.h>
 
 namespace RcppRngStream {
 

@@ -1,5 +1,11 @@
 PKG_LIBS = `$(R_HOME)/bin/Rscript -e "Rcpp:::LdFlags()"`
-PKG_CXXFLAGS = -I.
-PKG_CFLAGS = -I. 
+PKG_CXXFLAGS = -I. -I../inst/include/
+PKG_CFLAGS = -I.
 
 OBJECTS = RcppRngStream.o RngStream.o 
+
+all: $(SHLIB) staticLibrary
+
+staticLibrary: $(SHLIB)
+	       $(AR) qc ../inst/lib/libRcppRngStream.a $(OBJECTS)
+	       $(RANLIB) ../inst/lib/libRcppRngStream.a
